@@ -1,3 +1,4 @@
+// 2 mixins
 .center() {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,24 @@
     align-items: center;
 }
 
+.first-img() {
+    .blast {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+}
+
+// Parametric mixin
 .sign-up(@background; @color) {
     background: @background;
     color: @color;

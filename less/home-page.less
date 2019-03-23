@@ -5,6 +5,7 @@
   .intro {
 
     img {
+      width: 100%;
       border-radius: 5px;
     }
 
@@ -28,6 +29,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @mobile {
+      .first-img();
     }
   }
 
@@ -62,9 +67,10 @@
       }
 
       .btn {
-        text-decoration: none;
-        padding: 7.5px 18px;
         font-size: 1.8rem;
+        text-align: center;
+        width: 30%;
+        padding: 10px 0;
         .sign-up(@btn-bg; white);
       }
     }
@@ -77,6 +83,27 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+      padding: 20px 15px;
+      margin-top: 20px;
+      flex-direction: column-reverse;
+
+      .walk-img {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .walk-text {
+        margin-top: 20px;
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          padding: 20px 0;
+        }
       }
     }
   }
