@@ -33,14 +33,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+	Adaptive will use set formats at different sizes, but will not reach the whole spectrum of possible sizes.
+	Responsive on the other hand uses both fluid and adaptive techniques to look its best on ALL devices.
 
 2. Describe what it means to be mobile first vs desktop first.
+	Mobile first basically means you start your styling as if you were on a mobile device, then using
+	media queries start to style on sizes up from there, TL;DR = Style, Mobile --> Tablet --> Desktop
+
+	Desktop first is the exact oppisite styling the desktop version first then fitting it into smaller devices from there TL;DR = Style, Desktop --> Tablet --> Mobile
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+	It puts `rem` units into a base ten system, making them much easier to use 16px === 1.6rem.
 
 4. How would you describe preprocessing to someone new to CSS?
+	Preprocessing is just where you can use CSS and CSS shortcuts in a Less or SASS ect. file, then that
+	file will convert to usable CSS by a JavaScript preprocessor. Less --> Preprocessor (JS) --> CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+	My favorite concept is nesting and variables, it makes my life sooo much easier while programming to 
+	not have to remember all these different values of color or stuff like that. The concept that gave me the 
+	most trouble was probably Parametric mixins, but Cam did a great job of explaining those so I don't feel
+	there as hard anymore.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -106,7 +119,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [X] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
@@ -116,11 +129,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -132,6 +145,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [X] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription

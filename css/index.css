@@ -161,6 +161,10 @@ p {
   margin: 0 auto;
 }
 .nav-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   display: flex;
@@ -194,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;
