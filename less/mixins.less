@@ -4,3 +4,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.sign-up(@background; @color) {
+    background: @background;
+    color: @color;
+    border-radius: 5px;
+
+    &:hover {
+        background: @color;
+        color: @background;
+        border: 1px solid @background;
+        transition: 0.2s;
+    }
+}
