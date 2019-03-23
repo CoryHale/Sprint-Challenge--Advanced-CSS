@@ -305,3 +305,33 @@ footer {
     padding: 20px 0;
   }
 }
+.home .mag-form {
+  text-align: center;
+}
+.home .mag-form .first-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.home .mag-form .first-name input {
+  width: 50%;
+}
+.home .mag-form .last-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.home .mag-form .last-name input {
+  width: 50%;
+}
+.home .mag-form .email {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.home .mag-form .email input {
+  width: 50%;
+}
+.home .mag-form .radio-btns div {
+  margin-bottom: 10px;
+}
