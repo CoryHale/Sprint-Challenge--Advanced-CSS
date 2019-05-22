@@ -1,1 +1,48 @@
-// Mixins Here
+// 2 mixins
+.center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-img() {
+    .blast {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+}
+
+.text-box() {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    input {
+        width: 50%;
+    }
+}
+
+// Parametric mixin
+.sign-up(@background; @color) {
+    background: @background;
+    color: @color;
+    border-radius: 5px;
+
+    &:hover {
+        background: @color;
+        color: @background;
+        border: 1px solid @background;
+        transition: 0.2s;
+    }
+}

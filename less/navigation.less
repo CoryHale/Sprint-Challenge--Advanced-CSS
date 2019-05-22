@@ -1,1 +1,30 @@
-// Navigation code here
+.nav-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.5;
+    background: @wild-sand;
+    border-bottom: 1px solid @sea-shell;
+    .center();
+    
+    h1 {
+        font-size: 4.0rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: @river-bend;
+            font-size: 1.6rem;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
